@@ -12,6 +12,7 @@ body {
   color: #111; /* Cor padrão do texto */
   line-height: 1.4; /* Espaçamento entre linhas */
   padding: 20px; /* Espaço interno nas bordas da página */
+  text-align: center; /* Centraliza todo texto e elementos inline */
 }
 
 /* ====== Container central para o conteúdo ====== */
