@@ -12,7 +12,13 @@ body {
   color: #111; /* Cor padrão do texto */
   line-height: 1.4; /* Espaçamento entre linhas */
   padding: 20px; /* Espaço interno nas bordas da página */
-  text-align: center; /* Centraliza todo texto e elementos inline */
+ 
+  display: flex;              /* Ativa layout flexível */
+  justify-content: center;    /* Centraliza horizontalmente */
+  align-items: center;        /* Centraliza verticalmente */
+  height: 100vh;              /* Ocupa 100% da altura da tela */
+  margin: 0;                  /* Remove margens padrão do navegador */
+
 }
 
 /* ====== Container central para o conteúdo ====== */
