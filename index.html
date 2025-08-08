@@ -5,55 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Responsividade -->
   <title>Galeria de Vídeos</title> <!-- Título da aba do navegador -->
   <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
-</head>
-<body>
-  <!-- Container central para limitar largura e centralizar -->
-  <div class="container">
-    
-    <!-- Cabeçalho da página -->
-    <header class="header">
-      <h1>Vídeos do Canal</h1> <!-- Título principal -->
-      <small>Seleção de aulas e tutoriais</small> <!-- Subtítulo -->
-    </header>
-
-    <!-- Grade que vai organizar os vídeos -->
-    <section class="video-grid">
-
-      <!-- Primeiro vídeo -->
-      <article class="video-card"> <!-- Cartão que envolve um vídeo -->
-        <div class="video-wrapper"> <!-- Caixa que mantém proporção 16:9 -->
-          <!-- Link embed do YouTube (modo privacidade) -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/EV0rV4haNFs?si=cb67_U67XIMx7ete" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
- gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen></iframe>
-        </div>
-        <!-- Texto abaixo do vídeo -->
-        <div class="video-meta">
-          <h3>Título do Vídeo 1</h3>
-          <p>Breve descrição ou assunto do vídeo.</p>
-        </div>
-      </article>
-
-      <!-- Segundo vídeo -->
-      <article class="video-card">
-        <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/yW1m06A-4lw?si=61G5_gdwxoE2lziw" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-          <h3>Título do Vídeo 2</h3>
-          <p>Descrição curta.</p>
-        </div>
-      </article>
-
-      <!-- Você pode repetir esse bloco quantas vezes quiser -->
-    </section>
-  </div>
-</body>
-<style>
+  <style>
   /* Caixa que mantém o formato 16:9 para o vídeo */
 .video-wrapper {
   position: relative;      /* Necessário para posicionar o iframe dentro */
@@ -72,5 +24,52 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
   border: 0;                /* Remove borda */
 }
 </style>
+</head>
+<body>
+  <!-- Container central para limitar largura e centralizar -->
+  <div class="container">
+    
+    <!-- Cabeçalho da página -->
+    <header class="header">
+      <h1>Vídeos do Canal</h1> <!-- Título principal -->
+      <small>Seleção de aulas e tutoriais</small> <!-- Subtítulo -->
+    </header>
 
+    <!-- Grade que vai organizar os vídeos -->
+    <section class="video-grid">
+
+      <!-- Primeiro vídeo -->
+      <article class="video-card"> <!-- Cartão que envolve um vídeo -->
+        <div class="video-wrapper"> <!-- Caixa que mantém proporção 16:9 -->
+          <!-- Link embed do YouTube (modo privacidade) -->
+          <iframe src="https://www.youtube.com/embed/EV0rV4haNFs?si=cb67_U67XIMx7ete" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+ gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>
+        </div>
+        <!-- Texto abaixo do vídeo -->
+        <div class="video-meta">
+          <h3>Título do Vídeo 1</h3>
+          <p>Breve descrição ou assunto do vídeo.</p>
+        </div>
+      </article>
+
+      <!-- Segundo vídeo -->
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/yW1m06A-4lw?si=61G5_gdwxoE2lziw" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Título do Vídeo 2</h3>
+          <p>Descrição curta.</p>
+        </div>
+      </article>
+
+      <!-- Você pode repetir esse bloco quantas vezes quiser -->
+    </section>
+  </div>
+</body>
 </html>
