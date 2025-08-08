@@ -53,4 +53,24 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
     </section>
   </div>
 </body>
+<style>
+  /* Caixa que mantém o formato 16:9 para o vídeo */
+.video-wrapper {
+  position: relative;      /* Necessário para posicionar o iframe dentro */
+  width: 100%;              /* Ocupa toda a largura disponível */
+  padding-top: 56.25%;      /* Mantém a proporção 16:9 (9/16 = 0.5625 = 56.25%) */
+  background: #000;         /* Fundo preto enquanto o vídeo não carrega */
+}
+
+/* iframe do YouTube ocupa toda a caixa */
+.video-wrapper iframe {
+  position: absolute;       /* Posiciona sobre a .video-wrapper */
+  top: 0;
+  left: 0;
+  width: 100%;              /* Largura total */
+  height: 100%;             /* Altura total */
+  border: 0;                /* Remove borda */
+}
+</style>
+
 </html>
