@@ -1,0 +1,59 @@
+/* === RESET BÁSICO ===
+   Remove margens e espaçamentos padrões dos navegadores 
+   e define o cálculo de largura pelo "box-sizing" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === CORPO DA PÁGINA (BODY) === */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+  background-color: #121212; /* Fundo escuro estilo Netflix */
+  color: #ffffff; /* Texto branco para contraste */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+  display: flex; /* Usa flexbox para organizar o conteúdo */
+  flex-direction: column; /* Coloca elementos em coluna (header, main, footer) */
+  min-height: 100vh; /* Faz o body ocupar no mínimo toda a altura da tela */
+}
+
+/* === CABEÇALHO (HEADER) === */
+header {
+  background: #e50914; /* Vermelho característico do Netflix */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+header h1 {
+  font-size: 1.8rem; /* Tamanho da fonte do título */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* === CONTEÚDO PRINCIPAL (MAIN) === */
+main {
+  flex: 1; /* Faz o main ocupar todo o espaço disponível */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center; /* Centraliza na vertical */
+  padding: 40px 20px; /* Espaçamento interno */
+}
+
+/* === VÍDEO (IFRAME) === */
+iframe {
+  width: 100%; /* O vídeo ocupa toda a largura disponível */
+  max-width: 800px; /* Limita a largura máxima em telas grandes */
+  height: 450px; /* Altura padrão do vídeo */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: none; /* Remove borda do iframe */
+  box-shadow: 0 0 15px rgba(0,0,0,0.7); /* Sombra para dar destaque */
+}
+
+/* === RODAPÉ (FOOTER) === */
+footer {
+  background: #222; /* Fundo cinza escuro */
+  padding: 15px; /* Espaçamento interno */
+  text-align: center; /* Texto centralizado */
+  font-size: 0.9rem; /* Texto menor */
+  color: #aaa; /* Cinza claro para contraste */
+}
